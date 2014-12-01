@@ -1,0 +1,33 @@
+<header class="row">
+  <h1 class="text-center col-md-6 col-md-offset-3">Find Promoter Networks</h1>
+</header>
+<section class="row">
+  <form>
+    <div class="form-group col-md-6 col-md-offset-3">
+      <label for="keywords" class="sr-only">Page</label>
+      <input ng-model="page" name="page" type="text" autofocus class="form-control" placeholder="Page, e.g. 1">
+    </div>
+    <div class="form-group col-md-6 col-md-offset-3">
+      <label for="per_page" class="sr-only">Per page</label>
+      <input ng-model="per_page" name="per_page" type="text" autofocus class="form-control" placeholder="Per page, e.g. 1">
+    </div>
+    <div class="form-group col-md-6 col-md-offset-3 text-center">
+      <button ng-click="index(page, per_page)" class="btn btn-primary btn-lg">Search</button>
+    </div>
+  </form>
+</section>
+<hr>
+<section class="row" ng-if="promoter_networks">
+  <h1 class="text-center h2">Results</h1>
+  <ul class="list-unlisted">
+    <li ng-repeat="promoter_network in promoter_networks">
+      <section class="well col-md-6 col-md-offset-3">
+        <h2 class="h3 col-md-6 text-right" style="margin-top: 0"><a href="#">{{promoter_network.name}}</a></h2>
+        <div class="col-md-6">
+          <button class="btn btn-info">Edit</button>
+          <button class="btn btn-danger">Delete</button>
+        </div>
+      </section>
+    </li>
+  </ul>
+</section>

@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+PromoterNetwork.create([
+  {name: 'Fineco'},
+  {name: 'Widiba'},
+  {name: 'Che Banca'},
+  {name: 'Mediolanum'},
+  {name: 'Intesa Sanpaolo'}
+])

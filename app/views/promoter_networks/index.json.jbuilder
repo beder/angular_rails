@@ -1,0 +1,1 @@
+json.array! @promoter_networks, partial: 'promoter_network', as: :promoter_network
