@@ -57,5 +57,3 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'kaminari'
-
-gem 'opbeat'
